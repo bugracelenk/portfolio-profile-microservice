@@ -25,7 +25,8 @@
       "@dtos/*": ["src/dtos/*"],
       "@helpers/*": ["src/helpers/*"],
       "@responses/*": ["src/responses/*"],
-      "@patterns": ["src/patterns"]
+      "@patterns": ["src/pattern.enum"],
+      "@appmodule": ["src/profile.module"]
     }
   }
 }

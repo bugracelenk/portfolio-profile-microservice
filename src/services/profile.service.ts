@@ -1,8 +1,8 @@
+import { Injectable } from '@nestjs/common';
+import { Profile } from '@schemas/profile.schema';
+import { ProfileRepository } from '@repositories/profile.repository';
 import { ProfileCreateDto } from '@dtos/profile.create.dto';
 import { ProfileUpdateDto } from '@dtos/profile.update.dto';
-import { Injectable } from '@nestjs/common';
-import { ProfileRepository } from '@repositories/profile.repository';
-import { Profile } from '@schemas/profile.schema';
 
 @Injectable()
 export class ProfileService {

@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { IUser } from 'src/interfaces/user.interface';
 
 export type ProfileDocument = Profile & Document;
 
@@ -34,6 +35,8 @@ export class Profile {
     default: '',
   })
   profileImage: string;
+
+  user: IUser;
 }
 
 export const ProfileSchema = SchemaFactory.createForClass(Profile);
